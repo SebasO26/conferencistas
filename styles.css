@@ -14,6 +14,7 @@ header {
     object-fit: cover;
     object-position: center top;
     clip-path: polygon(round 3px, 50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 75%, 0% 25%);
+    transition: transform 0.8s ease;
 }
 
 .primero {
@@ -99,10 +100,22 @@ button {
     border-radius: 10px;
     border: 1px;
     color: white;
+    transition: linear 0.3s;
 }
 
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+button:hover {
+    background: #ff6582;
+    width: 260px;
+    height: 80px;
+    transition: linear 0.3s;
+}
+
+.hexagono:hover {
+    transform: rotateY(360deg);
 }
